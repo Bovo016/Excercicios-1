@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+    <fieldset>
+     <legend>Dados Pessoais</legend>
+        Nome: <input type="text" id="nome" name="nome" required>  
+        E-mail: <input type="email" id="email" name="email" required>  
+        Senha: <input type="password" id="senha" name="senha" required><br>
+        Sexo: 
+        <input type="radio" id="masculino" name="sexo" value="masculino">  
+        <label for="masculino">Masculino</label>  
+        <input type="radio" id="feminino" name="sexo" value="feminino">  
+        <label for="feminino">Feminino</label>  
+        <input type="radio" id="outros" name="sexo" value="outros">  
+        <label for="outros">Outros</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        CEP: <input type="text" id="cep" name="cep" required>  
+        Logradouro: <input type="text" id="logradouro" name="logradouro" required>  
+        Número: <input type="text" id="numero" name="numero" required><br>  
+        Complemento: <input type="text" id="complemento" name="complemento"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Financeiros</legend> 
+        Tipo: 
+        <input type="radio" id="nacional" name="tipo" value="nacional">  
+        <label for="nacional">Nacional</label>  
+        <input type="radio" id="internacional" name="tipo" value="internacional">  
+        <label for="internacional">Internacional</label>
+        Bandeira: 
+        <select id="bandeira" name="bandeira">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="amex">American Express</option>
+            <option value="discover">Discover</option>
+        </select>
+        Número do Cartão: <input type="text" id="cartao" name="cartao" required><br>
+        Validade: <input type="month" id="validade" name="validade" required>
+
+        <input type="submit" value="Enviar">  
+        <input type="reset" value="Limpar">  
+    </fieldset>
+    </form>
+</body>
+</html>
